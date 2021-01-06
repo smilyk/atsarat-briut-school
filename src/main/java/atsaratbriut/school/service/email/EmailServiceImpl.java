@@ -50,6 +50,7 @@ public class EmailServiceImpl implements EmailService {
         try {
             helper.setTo(confirmationEmailDto.getEmail());
 
+
             byte[] decodedImage = Base64.getDecoder().decode(confirmationEmailDto.getPicture());
             helper.addAttachment("school_ben_gurion_resolution.jpg", new ByteArrayResource(decodedImage));
             helper.addAttachment("logo.png", new ClassPathResource("logo.png"));
