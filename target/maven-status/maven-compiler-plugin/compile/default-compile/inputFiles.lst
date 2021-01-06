@@ -1,0 +1,14 @@
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/dto/ConfirmationEmailDto.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/controllers/ParseController.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/dto/ErrorEmailDto.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/service/email/EmailServiceImpl.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/controllers/PingController.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/exception/exception/ErrorMessage.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/config/EmailConfig.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/service/parser/ParsServiceImpl.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/exception/exception/SchoolServiceException.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/AtsaratBriutSchoolAppl.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/service/email/EmailService.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/exception/exception/AppExceptionsHandler.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/service/parser/ParsService.java
+/Users/smilyk/Desktop/atsarat-briut-school/src/main/java/atsaratbriut/school/exception/exception/ExceptionResponse.java
