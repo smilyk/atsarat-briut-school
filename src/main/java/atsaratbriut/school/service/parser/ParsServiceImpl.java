@@ -134,8 +134,11 @@ public class ParsServiceImpl implements ParsService {
     }
 
     private WebDriver getWebDriver() {
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get(schoolUrl);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://www.webtop.co.il/mobilev2/");
         return driver;
     }
 }
