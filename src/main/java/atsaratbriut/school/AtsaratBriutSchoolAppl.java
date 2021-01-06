@@ -8,7 +8,7 @@ public class AtsaratBriutSchoolAppl {
     public static void main(String[] args) {
 
 
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
         SpringApplication.run(AtsaratBriutSchoolAppl.class, args);
     }
 
