@@ -147,9 +147,10 @@ public class ParsServiceImpl implements ParsService {
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //        driver.get("https://www.webtop.co.il/mobilev2/");
         System.setProperty("CHROMEDRIVER_PATH", "GOOGLE_CHROME_BIN");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("useAutomationExtension", false);
+        WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.webtop.co.il/mobilev2/");
         return driver;
     }
