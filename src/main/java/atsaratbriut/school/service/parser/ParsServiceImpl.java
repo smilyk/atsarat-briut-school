@@ -134,7 +134,7 @@ public class ParsServiceImpl implements ParsService {
     }
 
     private WebDriver getWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        System.setProperty("CHROMEDRIVER_PATH", "GOOGLE_CHROME_BIN");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

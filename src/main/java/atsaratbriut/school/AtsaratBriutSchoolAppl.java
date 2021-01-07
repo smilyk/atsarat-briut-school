@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AtsaratBriutSchoolAppl {
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
         SpringApplication.run(AtsaratBriutSchoolAppl.class, args);
     }
 
