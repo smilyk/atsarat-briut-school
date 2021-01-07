@@ -149,6 +149,7 @@ public class ParsServiceImpl implements ParsService {
         System.setProperty("CHROMEDRIVER_PATH", "GOOGLE_CHROME_BIN");
 
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         options.setExperimentalOption("useAutomationExtension", false);
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.webtop.co.il/mobilev2/");
