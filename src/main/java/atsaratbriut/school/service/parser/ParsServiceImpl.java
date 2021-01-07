@@ -141,6 +141,7 @@ public class ParsServiceImpl implements ParsService {
 //        options.setBinary("/app/.apt/usr/bin/google-chrome");
         options.addArguments("--whitelisted-ips=\"\"");
         options.addArguments("window-size=1200x600");
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
