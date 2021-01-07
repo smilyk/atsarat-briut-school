@@ -8,6 +8,7 @@ import atsaratbriut.school.service.email.EmailService;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -134,8 +135,12 @@ public class ParsServiceImpl implements ParsService {
     }
 
     private WebDriver getWebDriver() {
-        System.setProperty("CHROMEDRIVER_PATH", "GOOGLE_CHROME_BIN");
-        WebDriver driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "CHROMEDRIVER_PATH");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--whitelisted-ips=\"\"");
+        options.addArguments("window-size=1200x600");
+        WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.webtop.co.il/mobilev2/");
