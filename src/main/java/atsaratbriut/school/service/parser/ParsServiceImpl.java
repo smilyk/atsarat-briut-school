@@ -135,7 +135,7 @@ public class ParsServiceImpl implements ParsService {
     }
 
     private WebDriver getWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "CHROMEDRIVER_PATH");
+        System.setProperty("CHROMEDRIVER_PATH", "CHROMEDRIVER_PATH");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("--whitelisted-ips=\"\"");
