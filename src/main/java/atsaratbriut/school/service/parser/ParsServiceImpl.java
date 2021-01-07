@@ -138,7 +138,7 @@ public class ParsServiceImpl implements ParsService {
 //        System.setProperty("CHROMEDRIVER_PATH", "CHROMEDRIVER_PATH");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        options.setBinary("/app/.apt/usr/bin/google-chrome");
+//        options.setBinary("/app/.apt/usr/bin/google-chrome");
         options.addArguments("--whitelisted-ips=\"\"");
         options.addArguments("window-size=1200x600");
         WebDriver driver = new ChromeDriver(options);
